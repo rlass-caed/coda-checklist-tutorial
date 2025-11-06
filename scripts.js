@@ -1,6 +1,6 @@
 function toggleExample(button) {
     const content = button.nextElementSibling;
-    
+
     document.querySelectorAll('.example-content.active').forEach(item => {
         if (item !== content) {
             item.classList.remove('active');
@@ -10,9 +10,9 @@ function toggleExample(button) {
             }
         }
     });
-    
+
     content.classList.toggle('active');
-    
+
     if (content.classList.contains('active')) {
         button.textContent = '❌ Fechar Exemplo';
     } else {
