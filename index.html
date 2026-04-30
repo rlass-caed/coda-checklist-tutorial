@@ -1,388 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Padronização Coda</title>
     <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
 </head>
-
 <body>
-    <h1>📚 TUTORIAL DE UTILIZAÇÃO - CHEKLIST</h1>
-
+    <nav class="side-menu">
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <ul>
+            <li><a href="#secao1">Cadastrar Checklist</a></li>
+            <li><a href="#secao2">Manutenção</a></li>
+            <li><a href="#secao3">Utilizar Checklist</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-toggle-button"><i class="fi fi-ss-moon"></i>
+    </nav>
+    <h1><i class="fi fi-ss-book-open-cover"></i> TUTORIAL DE UTILIZAÇÃO - CODA</h1>
+    
     <div class="intro">
-        <h2>🎯 Objetivo</h2>
-        <p><strong>Este tutorial tem como objetivo padronizar o uso do CODA entre todas as equipes</strong>, garantindo
-            que todos tenham o mesmo conhecimento sobre cadastro de checklists, manutenção e acesso às informações.</p>
+        <h2><i class="fi fi-sr-bullseye-arrow"></i> Objetivo</h2>
+        <p><strong>Este tutorial tem como objetivo padronizar o uso do CODA entre todas as equipes</strong>, garantindo que todos tenham o mesmo conhecimento sobre cadastro de checklists, manutenção e acesso às informações.</p>
     </div>
 
     <div class="section-separator">
         <div class="section-separator-title">SEÇÃO 1</div>
     </div>
 
-    <div class="tutorial-section">
+    <div class="tutorial-section" id="secao1">
         <h2>📋 COMO CADASTRAR UM CHECKLIST</h2>
-
+        
         <div class="important-notice">
-            <div class="notice-icon">⚠️</div>
+            <div class="notice-icon" style="color: red;"><i class="fi fi-ss-diamond-exclamation"></i></div>
             <div class="notice-content">
-                <strong>IMPORTANTE:</strong> Esta área permite cadastrar tópicos(checklists) necessários para realizar
-                uma atividade existente e já mapeada. Para adicionar atividades novas que ainda não foram mapeadas,
-                procure a supervisão para orientação sobre o processo de mapeamento inicial.
+                <strong>IMPORTANTE:</strong> Esta área permite cadastrar tarefas (checklists) necessários para realizar uma atividade existente e já mapeada. Para adicionar atividades novas que ainda não foram mapeadas, procure a supervisão para orientação sobre o processo de mapeamento inicial.
             </div>
         </div>
-
+        
         <div class="steps">
             <div class="step">
                 <div class="step-content">
+                    <strong>Acessar o Coda - Operação de Dados</strong>
+                    <p>Faça login no sistema CODA utilizando suas credenciais.</p> 
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-content">
                     <strong>Entrar na Área "Operação de Dados"</strong>
-                    <p>Na lista de documentos, clique em <strong>"Operação de Dados"</strong> para acessar a área de
-                        trabalho principal.</p>
-
-                    <button class="example-toggle" onclick="toggleExample(this)">📸 Ver Exemplo</button>
+                    <p>Na lista de documentos, clique em <strong>"Operação de Dados"</strong> para acessar a área de trabalho principal.</p>
+                    
+                    <button class="example-toggle" onclick="toggleExample(this)"><i class="fi fi-ss-camera"></i> Ver Exemplo</button>
                     <div class="example-content">
-                        <div class="example-title">💡 Exemplo Visual - Acessar Operação de Dados</div>
-                        <img src="img/oped.png" class="example-image"
-                            alt="Screenshot mostrando como acessar Operação de Dados">
+                        <div class="example-title"><i class="fi fi-ss-camera"></i> Exemplo Visual - Acessar Operação de Dados</div>
+                        <img src="img/oped.png" class="example-image" alt="Screenshot mostrando como acessar Operação de Dados">
                         <p>Clique no documento "Operação de Dados" na lista de documentos disponíveis.</p>
                     </div>
                 </div>
             </div>
-
+            
             <div class="step">
                 <div class="step-content">
                     <strong>Navegar até Templates</strong>
                     <p>No painel de navegação esquerdo, siga o caminho hierárquico:</p>
-
+                    
                     <div class="navigation-path">
-                        <span class="path-item">📁 Bases Compartilhadas</span>
+                        <span class="path-item">🌍 Supervisão</span>
                         <span class="path-arrow">→</span>
-                        <span class="path-item">📋 Checklist</span>
+                        <span class="path-item"><img src="https://cdn.coda.io/icons/svg/color/knowledge-sharing.svg" class="title-icon" draggable="false" style="width: 20px; height: 20px; vertical-align: middle;"> Bases Compartilhadas</span>
                         <span class="path-arrow">→</span>
-                        <span class="path-item">📝 Templates</span>
+                        <span class="path-item"><img src="https://cdn.coda.io/icons/svg/color/checklist.svg" class="title-icon" draggable="false" style="width: 20px; height: 20px; vertical-align: middle;"> Checklist</span>
+                        <span class="path-arrow">→</span>
+                        <span class="path-item"><img src="https://cdn.coda.io/icons/svg/color/template.svg" class="title-icon" draggable="false" style="width: 20px; height: 20px; vertical-align: middle;"> Templates</span>
                     </div>
-
-                    <p>Esta é a área principal para gerenciamento de todos os modelos de checklist, onde você poderá
-                        visualizar, criar e modificar templates existentes.</p>
-
-                    <button class="example-toggle" onclick="toggleExample(this)">📸 Ver Exemplo</button>
+         
+                    <p>Esta é a área principal para gerenciamento de todos os modelos de checklist, onde você poderá visualizar, criar e modificar templates existentes.</p>
+                    
+                    <button class="example-toggle" onclick="toggleExample(this)"><i class="fi fi-ss-camera"></i> Ver Exemplo</button>
                     <div class="example-content">
-                        <div class="example-title">💡 Exemplo Visual - Navegação</div>
-                        <img src="img/1.png" class="example-image"
-                            alt="Screenshot mostrando a navegação: Bases Compartilhadas > Checklist > Templates">
-                        <p>A imagem mostra como navegar pela estrutura de pastas até chegar na seção Templates,
-                            destacando cada etapa do caminho.</p>
+                        <div class="example-title"><i class="fi fi-ss-camera"></i> Exemplo Visual - Navegação</div>
+                        <img src="img/1.png" class="example-image" alt="Screenshot mostrando a navegação: Bases Compartilhadas > Checklist > Templates">
+                        <p>A imagem mostra como navegar pela estrutura de pastas até chegar na seção Templates, destacando cada etapa do caminho.</p>
                     </div>
-
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-content">
+                    <strong>Procurar o Template da Equipe</strong>
+                    <p>Na seção de Templates, selecione a equipe e qual atividade deseja inserir um checklist.</p>
+                    
+                    <button class="example-toggle" onclick="toggleExample(this)"><i class="fi fi-ss-camera"></i> Ver Exemplo</button>
+                    <div class="example-content">
+                        <div class="example-title"><i class="fi fi-ss-camera"></i> Exemplo Visual - Templates por Equipe</div>
+                        <img src="img/template_eqp.png" class="example-image" alt="Exemplo mostrando a lista de templates por equipe como Gestão dos Dados Administrativos e Planejamento da Avaliação">
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-content">
+                    <strong>Entendendo a Estrutura do Checklist</strong>
                     <div class="sub-steps">
                         <div class="sub-step">
-                            <strong>🔍 Localização:</strong> A seção "Bases Compartilhadas" está localizada no menu
-                            lateral esquerdo da aplicação.
+                            <strong>Como funciona a organização?</strong><br>
+                            Ao criar checklists, eles seguem uma hierarquia em 3 níveis: <strong>Atividade > Tópicos > Tarefas</strong>.<br><br>
+                            Para ficar mais claro, pense na Atividade "Fazer café":
+                            <ul>
+                                <li><strong>Atividade:</strong> É o objetivo principal (Ex: <em>Fazer café</em>).</li>
+                                <li><strong>Tópicos:</strong> São as grandes etapas para atingir o objetivo (Ex: <em>Esquentar água</em> e <em>Servir café</em>).</li>
+                                <li><strong>Tarefas:</strong> São as ações curtas e práticas de cada etapa (Ex: <em>Pegar caneco</em>, <em>Ligar o fogo</em>, <em>Botar na xícara</em>).</li>
+                            </ul>
+                            Mantenha essa estrutura para facilitar a organização e a correta execução do checklist pelas equipes.
+                        </div>
+                    </div>
+                    <button class="example-toggle" onclick="toggleExample(this)"><i class="fi fi-ss-camera"></i> Ver Exemplo</button>
+                    <div class="example-content">
+                        <div class="example-title" ><i class="fi fi-ss-camera"></i> Exemplo Visual - Templates por Equipe</div>
+                        <img src="img/fluxoGrama.png" class="example-image" alt="Diagrama mostrando a estrutura: Atividade (Fazer café) -> Tópicos (Esquentar água, Servir café) -> Tarefas" style="display: block; margin: 0 auto;">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-content">
+                    <strong>Adicionar Nova Tarefa</strong>
+                    
+                    <ul class="field-list">
+                        <li class="field-item"><span style="color: black; filter: brightness(0);">🔸</span> <strong>Selecione uma equipe:</strong> Ao selecionar a equipe e a respectiva atividade na qual deseja cadastrar uma tarefa, o botão verde adicionará uma nova linha à atividade. Em seguida, será possível editá-la de acordo com o tópico ao qual pertence. Caso a atividade ainda não exista, ela será criada automaticamente.</li>
+                        <li class="field-item"><span style="color: black; filter: brightness(0);">🔸</span> <strong>Expandir Seção:</strong> Clique para expandir e visualizar as atividades da equipe selecionada</li>
+                        <li class="field-item"><span style="color: black; filter: brightness(0);">🔸</span> <strong>Selecionar Atividade:</strong> Escolha a atividade desejada e expanda para ver seus tópicos e tarefas</li>
+                        <li class="field-item"><span style="color: black; filter: brightness(0);">🔸</span> <strong>Adicionar Nova Tarefa:</strong> Defina o tópico que melhor se encaixa a nova tarefa, ou crie um tópico novo, adicione o título e complete com a descrição detalhada</li>
+                    </ul>
+                    <button class="example-toggle" onclick="toggleExample(this)"><i class="fi fi-ss-camera"></i> Ver Exemplo</button>
+                    <div class="example-content">
+                        <div class="example-title"><i class="fi fi-ss-camera"></i> Exemplo Visual </div>
+                        <div class="example-placeholder">
+                            <video controls class="example-video">
+                                <source src="img/video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    
+                   
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-content">
+                    <strong>Reordenar e Excluir Tarefas</strong>
+                    <p>Após adicionar tópicos e tarefas, você pode reorganizar a ordem de exibição ou remover itens que não são mais necessários.</p>
+                    
+                    <ul class="field-list">
+                        <li class="field-item"><span style="color: black; filter: brightness(0);">🔸</span> <strong>Ordenação Automática:</strong> O sistema numera automaticamente as tarefas conforme são adicionadas</li>
+                        <li class="field-item"><span style="color: black; filter: brightness(0);">🔸</span> <strong>Reordenação Manual:</strong> Clique e arraste qualquer tarefa com o mouse para a posição desejada</li>
+                        <li class="field-item"><span style="color: black; filter: brightness(0);">🔸</span> <strong>Atualização Automática:</strong> Os números de ordem se ajustam automaticamente após o movimento</li>
+                        <li class="field-item"><span style="color: black; filter: brightness(0);">🔸</span> <strong>Exclusão de Atividades:</strong> Clique com o botão direito na linha e escolha a opção "delete row everywhere"</li>
+                        <li class="field-item"><span style="color: black; filter: brightness(0);">🔸</span> <strong>Confirmar Exclusão:</strong> Confirme a ação quando solicitado pelo sistema</li>
+                    </ul>
+                    
+                    <button class="example-toggle" onclick="toggleExample(this)"><i class="fi fi-ss-camera"></i> Ver Exemplo</button>
+                    <div class="example-content">
+                        <div class="example-title"><i class="fi fi-ss-camera"></i> Exemplo Visual - Reordenação e Exclusão</div>
+                        <div class="example-placeholder">
+                            <video controls class="example-video">
+                                <source src="img/video%202.mp4" type="video/mp4">
+                                Seu navegador não suporta reprodução de vídeo.
+                            </video>
+                            <p><em>Vídeo demonstrando como reordenar atividades arrastando com o mouse e como excluir itens usando o menu contextual</em></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="step">
-            <div class="step-content">
-                <strong>Adicionar Novo Template</strong>
-                <p>Clique no botão <strong>"Adicionar Template"</strong> para iniciar o cadastro.</p>
-
-                <button class="example-toggle" onclick="toggleExample(this)">📸 Ver Exemplo</button>
-                <div class="example-content">
-                    <div class="example-title">💡 Exemplo Visual - Botão Adicionar</div>
-                    <div class="example-placeholder">
-                        <img src="img/add_template.png" class="example-image" alt="Screenshot adicionar template">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="step">
-            <div class="step-content">
-                <strong>Preencher Campos Obrigatórios</strong>
-                <p>Para cada atividade a ser cadastrada, preencha os seguintes campos:</p>
-
-                <div class="field-list">
-                    <div class="field-item">🔸 Atividade(selecione uma atividade ja existente)</div>
-                    <div class="field-item">🔸 Tópico</div>
-                    <div class="field-item">🔸 Descrição</div>
-                </div>
-
-                <button class="example-toggle" onclick="toggleExample(this)">📸 Ver Exemplo</button>
-                <div class="example-content">
-                    <div class="example-title">💡 Exemplo Visual - Formulário</div>
-                    <div class="example-placeholder">
-                        <div class="image-row">
-                            <img src="img/escolhe_atvd.png" class="example-image" alt="Screenshot seleção de atividade">
-                            <img src="img/organiza_atvd.png" class="example-image"
-                                alt="Screenshot organização de atividade">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="sub-steps">
-                    <div class="sub-step">
-                        <strong>📋 Estrutura Hierárquica:</strong> As atividades são organizadas em <strong>TÓPICOS
-                        </strong>que servem como agrupadores e que reúnem tarefas relacionadas. Cada
-                        <strong>TÓPICO</strong> funciona como uma categoria que agrupa várias <strong>TAREFAS </strong>
-                        do checklist, facilitando a organização e execução sequencial das atividades.
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="step">
-            <div class="step-content">
-                <strong>Adicionar Atividade Nova (Outro método)</strong>
-                <p>Existe outra maneira de adicionar tarefas novas diretamente no template. Este método é útil quando
-                    você precisa criar rapidamente um novo tópico ou tarefa dentro de uma atividade existente.</p>
-
-                <div class="field-list">
-                    <div class="field-item">🔸 <strong>Localizar Equipe:</strong> Encontre a equipe onde deseja incluir
-                        a nova atividade</div>
-                    <div class="field-item">🔸 <strong>Expandir Seção:</strong> Clique para expandir e visualizar as
-                        atividades da equipe selecionada</div>
-                    <div class="field-item">🔸 <strong>Selecionar Atividade:</strong> Escolha a atividade desejada e
-                        expanda para ver seus tópicos e tarefas</div>
-                    <div class="field-item">🔸 <strong>Adicionar Nova Tarefa:</strong> Defina o tópico que melhor se
-                        encaixa a nova tarefa, adicione o título e complete com a descrição detalhada</div>
-                </div>
-                <button class="example-toggle" onclick="toggleExample(this)">📸 Ver Exemplo</button>
-                <div class="example-content">
-                    <div class="example-title">💡 Exemplo Visual - Método Alternativo</div>
-                    <div class="example-placeholder">
-                        <video controls class="example-video">
-                            <source src="img/video.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-
-                <div class="sub-steps">
-                    <div class="sub-step">
-                        <strong>💡 Dica:</strong> Este método é mais rápido para adicionar múltiplos tópicos na mesma
-                        atividade, pois você não precisa repetir a seleção da atividade a cada nova tarefa.
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="step">
-            <div class="step-content">
-                <strong>Reordenar e Excluir Atividades</strong>
-                <p>Após adicionar suas atividades, você pode reorganizar a ordem de exibição ou remover tarefas que não
-                    são mais necessárias.</p>
-
-                <div class="field-list">
-                    <div class="field-item">🔸 <strong>Ordenação Automática:</strong> O sistema numera automaticamente
-                        as atividades conforme são adicionadas</div>
-                    <div class="field-item">🔸 <strong>Reordenação Manual:</strong> Clique e arraste qualquer atividade
-                        com o mouse para a posição desejada</div>
-                    <div class="field-item">🔸 <strong>Atualização Automática:</strong> Os números de ordem se ajustam
-                        automaticamente após o movimento</div>
-                    <div class="field-item">🔸 <strong>Exclusão de Atividades:</strong> Clique com o botão direito na
-                        linha e escolha a opção "delete row"</div>
-                    <div class="field-item">🔸 <strong>Confirmar Exclusão:</strong> Confirme a ação quando solicitado
-                        pelo sistema</div>
-                </div>
-
-                <button class="example-toggle" onclick="toggleExample(this)">📸 Ver Exemplo</button>
-                <div class="example-content">
-                    <div class="example-title">💡 Exemplo Visual - Reordenação e Exclusão</div>
-                    <div class="example-placeholder">
-                        <video controls class="example-video">
-                            <source src="img/video 2.mp4" type="video/mp4">
-                            Seu navegador não suporta reprodução de vídeo.
-                        </video>
-                        <p><em>Vídeo demonstrando como reordenar atividades arrastando com o mouse e como excluir
-                                tarefas usando o menu contextual</em></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     </div>
 
     <div class="section-separator">
         <div class="section-separator-title">SEÇÃO 2</div>
     </div>
 
-    <div class="tutorial-section">
-        <h2>🔧 MANUTENÇÃO DO CHECKLIST</h2>
-
+    <div class="tutorial-section" id="secao2">
+        <h2><i class="fi fi-sr-wrench-alt"></i> MANUTENÇÃO DO CHECKLIST</h2>
+        
         <div class="steps">
             <div class="step">
                 <div class="step-content">
                     <strong>Realizar Manutenção de Checklists Existentes</strong>
-                    <p>Para realizar manutenção em checklists já cadastrados, siga os mesmos passos da <strong>SEÇÃO 1 -
-                            COMO CADASTRAR UM CHECKLIST</strong> até chegar no template. A partir desse ponto, siga os
-                        passos específicos de manutenção abaixo:</p>
-
-                    <div class="field-list">
-                        <div class="field-item">🔸 <strong>Localizar Equipe:</strong> Encontre a equipe onde deseja
-                            fazer a manutenção</div>
-                        <div class="field-item">🔸 <strong>Expandir Seção:</strong> Clique para expandir e visualizar as
-                            atividades da equipe selecionada</div>
-                        <div class="field-item">🔸 <strong>Selecionar Atividade:</strong> Escolha a atividade desejada e
-                            expanda para ver seus tópicos e tarefas</div>
-                        <div class="field-item">🔸 <strong>Realizar Manutenção:</strong> Adicionar, editar ou excluir
-                            tarefas e tópicos conforme necessário</div>
-                    </div>
-
-                    <button class="example-toggle" onclick="toggleExample(this)">📸 Ver Exemplo</button>
+                    <p>Para realizar manutenção em checklists já cadastrados, siga os mesmos passos da <a href="#secao1"><strong>SEÇÃO 1 - COMO CADASTRAR UM CHECKLIST</strong></a> até chegar no template. A partir desse ponto, siga os passos específicos de manutenção abaixo:</p>
+                    
+                    <ul class="field-list">
+                        <li class="field-item"><span style="color: black; filter: brightness(0);">🔸</span> <strong>Localizar Equipe:</strong> Encontre a equipe onde deseja fazer a manutenção</li>
+                        <li class="field-item"><span style="color: black; filter: brightness(0);">🔸</span> <strong>Expandir Seção:</strong> Clique para expandir e visualizar as atividades da equipe selecionada</li>
+                        <li class="field-item"><span style="color: black; filter: brightness(0);">🔸</span> <strong>Selecionar Atividade:</strong> Escolha a atividade desejada e expanda para ver seus tópicos e tarefas</li>
+                        <li class="field-item"><span style="color: black; filter: brightness(0);">🔸</span> <strong>Realizar Manutenção:</strong> Adicionar, editar ou excluir tarefas e tópicos conforme necessário</li>
+                    </ul>
+                    
+                    <button class="example-toggle" onclick="toggleExample(this)"><i class="fi fi-ss-camera"></i> Ver Exemplo</button>
                     <div class="example-content">
-                        <div class="example-title">💡 Exemplo Visual - Processo de Manutenção</div>
+                        <div class="example-title"><i class="fi fi-ss-camera"></i> Exemplo Visual - Processo de Manutenção</div>
                         <div class="example-placeholder">
                             <video controls class="example-video">
                                 <source src="img/manutencao.mp4" type="video/mp4">
-                                Seu navegador não suporta reprodução de vídeo.
-                            </video>
-                        </div>
                     </div>
-
+                    
                     <div class="sub-steps">
                         <div class="sub-step">
-                            <strong>💡 Dica:</strong> Para adicionar novas tarefas, use os mesmos procedimentos
-                            explicados na Seção 1. Para editar, clique diretamente no campo desejado. Para excluir, use
-                            o botão direito na linha e selecione "delete row".
+                            <strong><i class="fi fi-ss-camera"></i> Dica:</strong> Para adicionar novos itens, use os mesmos procedimentos explicados na Seção 1. Para editar, clique diretamente no campo desejado. Para excluir, use o botão direito na linha e selecione "delete row everywhere".
                         </div>
                         <div class="sub-step">
-                            <strong>⚠️ Importante:</strong> Lembre-se que os <strong>TÓPICOS</strong> funcionam como
-                            <strong>AGRUPADORES</strong> de tarefas relacionadas. Mantenha essa organização durante a
-                            manutenção.
+                            <strong>⚠️ Importante:</strong> Lembre-se que os <strong>TÓPICOS</strong> funcionam como <strong>AGRUPADORES</strong> de tarefas relacionadas. Mantenha essa organização durante a manutenção.
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+</div>
     <div class="section-separator">
         <div class="section-separator-title">SEÇÃO 3</div>
     </div>
 
-    <div class="tutorial-section">
-        <h2>🚀 COMO UTILIZAR O CHECKLIST</h2>
-
+    <div class="tutorial-section" id="secao3">
+        <h2><i class="fi fi-sr-rocket-lunch"></i> COMO UTILIZAR O CHECKLIST</h2>
+        
         <div class="steps">
             <div class="step">
                 <div class="step-content">
                     <strong>Entrar na Área "Operação de Dados"</strong>
-                    <p>Na lista de documentos, clique em <strong>"Operação de Dados"</strong> para acessar a área de
-                        trabalho principal.</p>
-
-                    <button class="example-toggle" onclick="toggleExample(this)">📸 Ver Exemplo</button>
+                    <p>Na lista de documentos, clique em <strong>"Operação de Dados"</strong> para acessar a área de trabalho principal.</p>
+                    
+                    <button class="example-toggle" onclick="toggleExample(this)"><i class="fi fi-ss-camera"></i> Ver Exemplo</button>
                     <div class="example-content">
-                        <div class="example-title">💡 Exemplo Visual - Acessar Operação de Dados</div>
-                        <img src="img/oped.png" class="example-image"
-                            alt="Screenshot mostrando como acessar Operação de Dados">
+                        <div class="example-title"><i class="fi fi-ss-camera"></i> Exemplo Visual - Acessar Operação de Dados</div>
+                        <img src="img/oped.png" class="example-image" alt="Screenshot mostrando como acessar Operação de Dados">
                         <p>Clique no documento "Operação de Dados" na lista de documentos disponíveis.</p>
                     </div>
                 </div>
             </div>
-
+            
             <div class="step">
                 <div class="step-content">
                     <strong>Escolher Sua Equipe</strong>
                     <p>Na tela inicial, selecione sua equipe na lista de equipes disponíveis.</p>
-
-                    <button class="example-toggle" onclick="toggleExample(this)">📸 Ver Exemplo</button>
+                    
+                    <button class="example-toggle" onclick="toggleExample(this)"><i class="fi fi-ss-camera"></i> Ver Exemplo</button>
                     <div class="example-content">
                         <img src="img/equipes.png" class="example-image" alt="Exemplo de seleção de equipe">
                         <p>Nesta tela você pode ver como selecionar sua equipe na lista disponível.</p>
                     </div>
                 </div>
             </div>
-
+            
             <div class="step">
                 <div class="step-content">
                     <strong>Acessar Painel da Equipe</strong>
                     <p>Entre no painel da sua equipe onde você poderá visualizar todos os projetos cadastrados.</p>
-
-                    <button class="example-toggle" onclick="toggleExample(this)">📸 Ver Exemplo</button>
+                    
+                    <button class="example-toggle" onclick="toggleExample(this)"><i class="fi fi-ss-camera"></i> Ver Exemplo</button>
                     <div class="example-content">
-                        <div class="example-title">💡 Exemplo Visual - Painel da Equipe</div>
+                        <div class="example-title"><i class="fi fi-ss-camera"></i> Exemplo Visual - Painel da Equipe</div>
                         <div class="example-placeholder">
                             <img src="img/painel.png" class="example-image" alt="Exemplo de seleção de equipe">
-                            <p>Nesta tela você seleciona o painel da equipe que deseja</p>
+                        <p>Nesta tela você seleciona o painel da equipe que deseja</p>
                         </div>
                     </div>
                 </div>
             </div>
-
+            
             <div class="step">
                 <div class="step-content">
                     <strong>Selecionar Projeto</strong>
                     <p>Escolha o projeto desejado e clique no <strong>botão verde "Abrir"</strong> para acessá-lo.</p>
-
-                    <button class="example-toggle" onclick="toggleExample(this)">📸 Ver Exemplo</button>
+                    
+                    <button class="example-toggle" onclick="toggleExample(this)"><i class="fi fi-ss-camera"></i> Ver Exemplo</button>
                     <div class="example-content">
-                        <div class="example-title">💡 Exemplo Visual - Seleção de Projeto</div>
+                        <div class="example-title"><i class="fi fi-ss-camera"></i> Exemplo Visual - Seleção de Projeto</div>
                         <div class="example-placeholder">
                             <img src="img/abrir.png" class="example-image" alt="Exemplo de seleção de projeto">
                         </div>
                     </div>
-
+                    
                     <div class="sub-steps">
                         <div class="sub-step">
-                            <strong>🔍 Dica de Pesquisa:</strong> É possível pesquisar pelo código do projeto usando o
-                            campo de pesquisa localizado na parte direita da tela. Isso facilita encontrar projetos
-                            específicos em listas extensas.
+                            <strong>Dica de Pesquisa:</strong> É possível pesquisar pelo código do projeto usando o campo de pesquisa localizado na parte direita da tela. Isso facilita encontrar projetos específicos em listas extensas.
+                        </div>
+                        <div class="sub-step">
+                            <strong>Projetos Disponíveis:</strong> Todos os projetos exibidos aqui já existem no sistema. Se não encontrar o projeto que precisa, consulte a supervisão.
                         </div>
                     </div>
                 </div>
             </div>
-
+            
             <div class="step">
                 <div class="step-content">
                     <strong>Selecionar Atividades da Equipe</strong>
-                    <p>No campo <strong>"Lista das Equipes"</strong>, selecione quais atividades de qual equipe deseja
-                        visualizar.</p>
-
-                    <button class="example-toggle" onclick="toggleExample(this)">📸 Ver Exemplo</button>
+                    <p>No campo <strong>"Lista das Equipes"</strong>, selecione a equipe na qual deseja ver as atividades.</p>
+                    
+                    <button class="example-toggle" onclick="toggleExample(this)"><i class="fi fi-ss-camera"></i> Ver Exemplo</button>
                     <div class="example-content">
-                        <div class="example-title">💡 Exemplo Visual - Lista das Equipes</div>
+                        <div class="example-title"><i class="fi fi-ss-camera"></i> Exemplo Visual - Lista das Equipes</div>
                         <div class="example-placeholder">
                             <img src="img/lista_eqps.png" class="example-image" alt="Exemplo de seleção de projeto">
                         </div>
                     </div>
-
+                    
                     <div class="sub-steps">
                         <div class="sub-step">
-                            <strong>💡 Dica:</strong> Filtro para exibir apenas as atividades relevantes da equipe
-                            selecionada.
+                            <strong><i class="fi fi-ss-camera"></i> Dica:</strong> Filtro para exibir apenas as atividades relevantes da equipe selecionada.
                         </div>
                     </div>
                 </div>
             </div>
-
+            
             <div class="step">
                 <div class="step-content">
                     <strong>Selecionar Tarefa de Checklist</strong>
-                    <p>No campo <strong>"Lista de Tarefas Checklist"</strong>, selecione o checklist que deseja
-                        visualizar.</p>
-
-                    <button class="example-toggle" onclick="toggleExample(this)">📸 Ver Exemplo</button>
+                    <p>No campo <strong>"Lista de Tarefas Checklist"</strong>, selecione a atividade na qual deseja ver o checklist.</p>
+                    
+                    <button class="example-toggle" onclick="toggleExample(this)"><i class="fi fi-ss-camera"></i> Ver Exemplo</button>
                     <div class="example-content">
-                        <div class="example-title">💡 Exemplo Visual - Lista de Tarefas</div>
+                        <div class="example-title"><i class="fi fi-ss-camera"></i> Exemplo Visual - Lista de Tarefas</div>
                         <div class="example-placeholder">
                             <img src="img/lista_tarefa.png" class="example-image" alt="Exemplo de seleção de projeto">
                         </div>
                     </div>
                 </div>
             </div>
-
+            
             <div class="step">
                 <div class="step-content">
                     <strong>Adicionar Checklist</strong>
-                    <p>Clique no <strong>botão verde "Insere Checklist"</strong> para começar a trabalhar com o
-                        checklist selecionado.</p>
-
-                    <button class="example-toggle" onclick="toggleExample(this)">📸 Ver Exemplo</button>
+                    <p>Clique no <strong>botão verde "Insere Checklist"</strong> para começar a trabalhar com o checklist selecionado.</p>
+                    
+                    <button class="example-toggle" onclick="toggleExample(this)"><i class="fi fi-ss-camera"></i> Ver Exemplo</button>
                     <div class="example-content">
-                        <div class="example-title">💡 Exemplo Visual - Botão Checklist</div>
+                        <div class="example-title"><i class="fi fi-ss-camera"></i> Exemplo Visual - Botão Checklist</div>
                         <div class="example-placeholder">
                             <video controls class="example-video">
                                 <source src="img/insere_chk.mp4" type="video/mp4">
@@ -392,76 +346,91 @@
                     </div>
                 </div>
             </div>
-
+            
             <div class="step">
                 <div class="step-content">
                     <strong>Executar o Checklist</strong>
-                    <p>Após expandir as tarefas do checklist selecionado, siga a ordem sequencial proposta para garantir
-                        a execução correta de todas as atividades.</p>
-
-                    <div class="field-list">
-                        <div class="field-item">🔸 <strong>Seguir Ordem:</strong> Execute as tarefas na sequência
-                            numerada apresentada no checklist</div>
-                        <div class="field-item">🔸 <strong>Iniciar Tarefa:</strong> Clique no <strong>botão verde
-                                "Iniciar"</strong> para começar uma tarefa específica</div>
-                        <div class="field-item">🔸 <strong>Controles Liberados:</strong> Após iniciar, os botões
-                            "Pausar" e "Finalizar" ficarão disponíveis</div>
-                        <div class="field-item">🔸 <strong>Pausar se Necessário:</strong> Use o botão "Pausar" para
-                            interromper temporariamente a atividade</div>
-                        <div class="field-item">🔸 <strong>Finalizar Tarefa:</strong> Ao concluir a atividade, clique em
-                            "Finalizar" no CODA</div>
-                    </div>
-
-                    <button class="example-toggle" onclick="toggleExample(this)">📸 Ver Exemplo</button>
+                    <p>Após expandir os itens do checklist selecionado, siga a ordem sequencial proposta para garantir a execução correta de todas as tarefas.</p>
+                    
+                    <ul class="field-list">
+                        <li class="field-item"><span style="color: black; filter: brightness(0);">🔸</span> <strong>Seguir Ordem:</strong> Execute as tarefas na sequência numerada apresentada no checklist</li>
+                        <li class="field-item"><span style="color: black; filter: brightness(0);">🔸</span> <strong>Iniciar Item:</strong> Clique no <strong>botão verde "Iniciar"</strong> para começar uma tarefa específica</li>
+                        <li class="field-item"><span style="color: black; filter: brightness(0);">🔸</span> <strong>Controles Liberados:</strong> Após iniciar, os botões "Pausar" e "Finalizar" ficarão disponíveis</li>
+                        <li class="field-item"><span style="color: black; filter: brightness(0);">🔸</span> <strong>Pausar se Necessário:</strong> Use o botão "Pausar" para interromper temporariamente a tarefa</li>
+                        <li class="field-item"><span style="color: black; filter: brightness(0);">🔸</span> <strong>Finalizar Tarefa:</strong> Ao concluir a tarefa, clique em "Finalizar" no CODA</li>
+                        <li class="field-item"><span style="color: black; filter: brightness(0);">🔸</span> <strong>Campo de Observação:</strong> Voce pode adicionar observações a respeito da tarefa que está sendo realizada</li>
+                    </ul>
+                    
+                    <button class="example-toggle" onclick="toggleExample(this)"><i class="fi fi-ss-camera"></i> Ver Exemplo</button>
                     <div class="example-content">
-                        <div class="example-title">💡 Exemplo Visual - Execução do Checklist</div>
-                        <div class="example-placeholder">
-                            <img src="img/execucao_checklist.png" class="example-image"
-                                alt="Screenshot da execução do checklist">
-                            <p><em>Tela mostrando o checklist expandido com os botões de controle (Iniciar, Pausar,
-                                    Finalizar)</em></p>
-                        </div>
+                        <div class="example-title"><i class="fi fi-ss-camera"></i> Exemplo Visual - Execução do Checklist</div>
+                        <video controls class="example-video">
+                            <source src="img/exec.mp4" type="video/mp4">
+                            Seu navegador não suporta reprodução de vídeo.
+                        </video>
                     </div>
-
+                    
                     <div class="sub-steps">
                         <div class="sub-step">
-                            <strong>📋 Fluxo de Execução:</strong>
-                            <br>1️⃣ Selecionar tarefa → 2️⃣ Clicar "Iniciar" → 3️⃣ Executar atividade → 4️⃣ Clicar
-                            "Finalizar"
+                            <strong> Fluxo de Execução:</strong>
+                            <br>1️⃣ Selecionar item → 2️⃣ Clicar "Iniciar" → 3️⃣ Executar atividade → 4️⃣ Clicar "Finalizar"
                         </div>
                         <div class="sub-step">
-                            <strong>⚠️ Importante:</strong> Cada tarefa deve ser <strong>finalizada no CODA</strong>
-                            após sua conclusão para manter o controle e rastreamento adequado do progresso do projeto.
+                            <div class="notice-icon">
+                                <i class="fi fi-ss-diamond-exclamation" style="color: red; font-size: 20px;"></i>
+                                <strong> Importante:</strong> Cada tarefa deve ser <strong>finalizada no CODA</strong> após sua conclusão para manter o controle e rastreamento adequado do progresso do projeto.
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="step">
-                <div class="step-content">
-                    <strong>Compreender a Estrutura Hierárquica do Sistema</strong>
-                    <p>Para utilizar o CODA de forma eficiente, é fundamental entender como os elementos estão
-                        organizados hierarquicamente:</p>
-
-                    <div class="field-list">
-                        <div class="field-item">🔸 <strong>EXEC (Ordem de Execução):</strong> Representa uma instância
-                            específica de execução. Se for necessário refazer alguma atividade, será criada uma nova
-                            ordem de execução</div>
-                        <div class="field-item">🔸 <strong>ATIVIDADE:</strong> Corresponde a uma atividade específica da
-                            equipe selecionada (ex: "PL_MIGRAÇÃO", "PL_CRÍTICA")</div>
-                        <div class="field-item">🔸 <strong>TÓPICO (AGRUPADOR):</strong> Organiza e agrupa tarefas
-                            relacionadas necessárias para conclusão daquele tópico específico</div>
-                        <div class="field-item">🔸 <strong>TAREFA:</strong> Representa os passos específicos e
-                            detalhados que devem ser seguidos para executar uma ação</div>
-                    </div>
-                    <div class="example-content">
-                        <div class="example-title">💡 Exemplo Visual - Estrutura Hierárquica</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <footer class="page-footer">
+        <strong>Created by: Pedrin da 160</strong>
+    </footer>
     <script src="scripts.js"></script>
 </body>
-
 </html>
